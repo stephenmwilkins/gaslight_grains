@@ -2,7 +2,8 @@
 *.lines
 *.out
 *.abundances
-*.eelin
+*.cont
+*.elin
 *.eelin
 *.pdf
 *.png
