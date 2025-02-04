@@ -1,0 +1,17 @@
+table SED "incident.sed"
+abundances "solar_GASS10.abn"
+grains Orion
+Q(H) = 49.22 # U=0.01, n_H = 100
+radius -2.0 log parsecs
+sphere
+hden 2.0 log
+constant density
+iterate
+stop column density 21.0
+stop temperature off
+save overview  "5.ovr" last
+save last abundances "5.abundances"
+save last continuum intrinsic "5.cont" units Angstroms no clobber
+save line list column absolute last units angstroms "5.elin" "linelist.dat"
+save line list emergent column absolute last units angstroms "5.eelin" "linelist.dat"
+save last lines, array "5.lines" units Angstroms no clobber
